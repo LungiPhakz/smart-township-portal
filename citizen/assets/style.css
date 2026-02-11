@@ -1,0 +1,158 @@
+:root{
+  --accent:#ff6600;
+  --overlay: rgba(0,0,0,0.6);
+}
+
+/* Background image (uses bg.png in assets folder) */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: url('../../assets/cover2.png') no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+}
+
+/* dim overlay for contrast */
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: var(--overlay);
+  z-index: 0;
+  backdrop-filter: blur(3px);
+}
+
+/* main container */
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 5%;
+  gap: 2rem;
+}
+
+/* left panel */
+.left-panel {
+  width: 55%;
+}
+.left-panel h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin: 0 0 12px 0;
+}
+.left-panel h1 span { color: var(--accent); font-weight:700; }
+.left-panel p {
+  margin: 15px 0 30px;
+  font-size: 16px;
+  max-width: 600px;
+  color: rgba(255,255,255,0.95);
+}
+.left-panel .btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.left-panel .btn:hover { background:#ff8533; }
+
+/* card (login/register) */
+.card {
+  background: rgba(0,0,0,0.75);
+  padding: 30px 36px;
+  width: 360px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+.card h2 { text-align:center; margin-bottom:18px; color:#fff; }
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #555;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  font-size: 15px;
+}
+.card input:focus { border-bottom-color: var(--accent); }
+.card button {
+  width: 100%;
+  padding: 10px;
+  background: var(--accent);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.card button:hover { background:#ff8533; }
+.card p { text-align:center; margin-top:14px; font-size:14px; }
+.card a { color: var(--accent); text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+
+/* responsive */
+@media (max-width: 900px) {
+  .container { flex-direction: column; padding: 2rem; gap: 1.5rem; }
+  .left-panel { width: 100%; text-align:center; }
+  .card { width: 100%; max-width:420px; }
+}
+/* === Top Navigation (Right corner menu) === */
+        .top-nav {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            display: flex;
+            gap: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            z-index: 5;
+        }
+
+        .top-nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .top-nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+         /* === Footer === */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 12px;
+            text-align: center;
+            background: rgba(0,0,0,0.45);
+            backdrop-filter: blur(4px);
+        }
+
+        footer .social-icons i {
+            font-size: 20px;
+            margin: 0 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        footer .social-icons i:hover {
+            transform: scale(1.2);
+            color: #ff6600;
+        }
+
+        footer p {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-top: 8px;
+        }

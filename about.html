@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Smart Township Portal</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            color: #fff;
+            background: url('assets/cover2.png') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+        }
+
+        .page-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.55);
+            backdrop-filter: blur(4px);
+        }
+
+        .top-nav {
+            position: absolute;
+            top: 20px; right: 30px;
+            display: flex; gap: 25px;
+            font-size: 16px; font-weight: 500;
+            z-index: 5;
+        }
+
+        .top-nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .top-nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .section {
+            max-width: 900px;
+            margin: 120px auto 80px auto;
+            padding: 40px;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.3);
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 36px;
+            color: #ff6600;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            gap: 30px;
+        }
+
+        .team-member {
+            width: 200px;
+            text-align: center;
+        }
+
+        .team-member img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50% / 50%;
+        border: 3px solid #ff6600;
+        transition: transform 0.3s;
+        
+    }
+
+    .team-member img:hover {
+        transform: scale(1.05) rotate(3deg);
+    }
+
+        .team-member h4 {
+            margin-top: 12px;
+            font-size: 18px;
+            color: #ffd38a;
+        }
+
+        .team-member p {
+            font-size: 14px;
+            color: #fff;
+            opacity: 0.8;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0; width: 100%;
+            padding: 12px; text-align: center;
+            background: rgba(0,0,0,0.45);
+            backdrop-filter: blur(4px);
+        }
+
+        footer .social-icons i {
+            font-size: 20px;
+            margin: 0 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        footer .social-icons i:hover {
+            transform: scale(1.2);
+            color: #ff6600;
+        }
+
+        footer p {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-overlay"></div>
+
+<!-- Top Navigation -->
+<div class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<!-- About Section -->
+<div class="section">
+    <h2>About Smart Township Portal</h2>
+    <p>
+        Smart Township Portal is a modern digital platform designed to empower communities through efficient service reporting, real-time updates, and seamless communication between citizens and administrators. Our mission is to leverage technology to improve the quality of life in townships by ensuring transparency, quick response times, and inclusive engagement.
+    </p>
+    <p>
+        With our platform, residents can report issues, track progress, and stay informed about community projects. Administrators and service providers can monitor requests, assign tasks, and provide timely feedback, ensuring that every citizen's voice is heard.
+    </p>
+
+    <h2 style="margin-top:40px;">Meet Our Team</h2>
+    <div class="team">
+        <div class="team-member">
+            <img src="assets/lungile.jpg" alt="Team Member">
+            <h4>Lungile Phakathi</h4>
+            <p>Founder ,Developer & CEO</p>
+        </div>
+       
+        <div class="team-member">
+            <img src="assets/Syanda.jpg" alt="Team Member">
+            <h4>Syanda Zwane</h4>
+            <p> QA Tester</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="social-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-whatsapp"></i>
+    </div>
+    <p>© 2025 Smart Township Portal – All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

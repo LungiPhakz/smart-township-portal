@@ -1,0 +1,185 @@
+/* Theme variables */
+:root{
+    --accent:#ff6600;
+    --bg-dark: #0d0d0d;
+    --glass: rgba(255,255,255,0.07);
+  --overlay: rgba(0,0,0,0.2);
+
+}
+
+/* Global */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: url('../assets/cover2.png') no-repeat center center fixed;
+  background-size: cover;
+      /* Adjust if sidebar width changes */
+    overflow-y: hidden;
+backdrop-filter: blur(3px);
+
+
+}
+
+.main {
+
+    margin-left: 240px;      /* same as sidebar width */
+    height: 100vh;           /* full screen height */
+    overflow-y: auto;        /* ✅ only this scrolls */
+    
+    padding: 24px;
+}
+
+
+/* Sidebar */
+.sidebar {
+   
+    
+    width: 240px;
+
+    height: 100vh;
+    background:   rgba(0,0,0,0.75);
+    border-right: 1px solid #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+     overflow: hidden;
+    
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+.sidebar h3 {
+    text-align: center;
+    color: var(--accent);
+    margin-bottom: 25px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 14px;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.05);
+    border-radius: 6px;
+    margin-bottom: 8px;
+    transition: 0.2s ease;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: var(--accent);
+    color: #fff;
+}
+
+
+
+/* Page Title */
+.page-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+/* dim overlay for contrast */
+
+
+/* Cards */
+.card {
+    
+    background: rgba(0,0,0,0.75);
+    border: 1px solid rgba(255,255,255,0.15);
+   
+    background: rgba(0,0,0,0.75);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(5px);
+}
+
+.card h4 {
+    color: var(--accent);
+}
+
+/* Tables */
+.table {
+    background: transparent !important;
+    color: #fff !important;
+}
+
+.table thead {
+    background: rgba(255,255,255,0.12) !important;
+}
+
+.table th {
+     color: #ff6600 !important;
+    border-bottom: 2px solid #ff6600 !important;
+}
+
+/* Table rows */
+.table tbody tr {
+    background: rgba(255,255,255,0.05) !important;
+    transition: 0.2s ease;
+}
+
+/* Hover effect */
+.table tbody tr:hover {
+    background: rgba(255,255,255,0.12) !important;
+}
+
+.table td {
+   border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+    color: #fff !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--accent);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #ff8533;
+}
+
+.btn-dark {
+    background: #222;
+    border: none;
+}
+
+.btn-dark:hover {
+    background: #333;
+}
+/* “No categories found” message */
+.table tbody tr td.text-muted {
+    color: #cccccc !important;
+}
+/* === Top Navigation (Right corner menu) === */
+        .top-nav {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            display: flex;
+            gap: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            z-index: 5;
+        }
+
+        .top-nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .top-nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }

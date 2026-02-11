@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Township Portal | Welcome</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        /* === Global Glass Background Style (matches your system UI) === */
+        body {
+            font-family: "Poppins", sans-serif;
+            color: #fff;
+            background: url('assets/cover2.png') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+        }
+
+        .page-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(3px);
+        }
+
+        /* === Top Navigation (Right corner menu) === */
+        .top-nav {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            display: flex;
+            gap: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            z-index: 5;
+        }
+
+        .top-nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .top-nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* === Main Page Content === */
+        .content {
+            position: relative;
+            text-align: center;
+            margin-top: 14%;
+            z-index: 2;
+        }
+
+        .content h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #ff6600;
+            text-shadow: 0 0 10px rgba(0,0,0,0.4);
+        }
+
+        .content p {
+            font-size: 18px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        /* === Shiny Border Buttons === */
+        .btn-container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .shine-btn {
+            padding: 14px 35px;
+            font-size: 17px;
+            font-weight: 600;
+            border: 2px solid #ff6600;
+            color: #ff6600;
+            text-decoration: none;
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+            transition: 0.3s ease-in-out;
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(4px);
+        }
+
+        .shine-btn::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(120deg, transparent, rgba(255, 123, 0, 0.7), transparent);
+            transform: rotate(25deg);
+            transition: 0.7s;
+        }
+
+        .shine-btn:hover {
+            border-color: #ffe48a;
+            color: #ffd38a;
+            transform: scale(1.1);
+        }
+
+        .shine-btn:hover::before {
+            left: 100%;
+        }
+
+        /* === Footer === */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 12px;
+            text-align: center;
+            background: rgba(0,0,0,0.45);
+            backdrop-filter: blur(4px);
+        }
+
+        footer .social-icons i {
+            font-size: 20px;
+            margin: 0 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        footer .social-icons i:hover {
+            transform: scale(1.2);
+            color: #ff6600;
+        }
+
+        footer p {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-overlay"></div>
+
+<!-- === Right Corner Menu === -->
+<div class="top-nav">
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<!-- === Main Content === -->
+<div class="content">
+    <h1>Smart Township Portal</h1>
+    <p>A modern and innovative digital platform empowering communities through smart service reporting and seamless communication.</p>
+
+    <!-- Shiny Buttons -->
+    <div class="btn-container">
+        <a href="citizen/login.php" class="shine-btn">Citizen Login</a>
+        <a href="admin/login.php" class="shine-btn">Admin Login</a>
+    </div>
+</div>
+
+<!-- === Footer === -->
+<footer>
+    <div class="social-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-whatsapp"></i>
+    </div>
+    <p>© 2025 Smart Township Portal – All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

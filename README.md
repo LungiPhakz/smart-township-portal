@@ -54,13 +54,13 @@ This repository will be continuously updated as development progresses.
 ![Home Page](assets/screenshots/Home.png)
 
 ### Registration Page
-![Register](assets/screenshots/Register.png)
+![Register](assets/screenshots/register.png)
 
 ### Login Page
 ![Login](assets/screenshots/Login.png)
 
 ### Citizen Dashboard
-![Citizen Dashboard](assets/screenshots/Citizen-Dashboard.png)
+![Citizen Dashboard](assets/screenshots/citizen-dashboard.png)
 
 ---
 

@@ -51,16 +51,17 @@ This repository will be continuously updated as development progresses.
 ## 🖼️ Screenshots
 
 ### Home Page
-![Home Page](assets/screenshots/Home.png)
+<img src="assets/screenshots/Home.png" alt="Home Page" width="600">
 
 ### Registration Page
-![Register](assets/screenshots/register.png)
+<img src="assets/screenshots/Register.png" alt="Register Page" width="600">
 
 ### Login Page
-![Login](assets/screenshots/Login.png)
+<img src="assets/screenshots/Login.png" alt="Login Page" width="600">
 
 ### Citizen Dashboard
-![Citizen Dashboard](assets/screenshots/citizen-dashboard.png)
+<img src="assets/screenshots/Citizen-Dashboard.png" alt="Citizen Dashboard" width="600">
+
 
 ---
 
